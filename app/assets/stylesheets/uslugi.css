@@ -1,0 +1,10 @@
+.color p {
+	background-color: #F0EFEF;
+	padding: 10px;
+	min-height: 100px;
+}
+.grey .color p {
+	background-color: white;
+	min-height: 135px;
+	text-align: center;
+}

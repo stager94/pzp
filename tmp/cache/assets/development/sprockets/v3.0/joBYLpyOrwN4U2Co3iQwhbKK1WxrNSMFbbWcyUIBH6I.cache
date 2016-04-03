@@ -1,0 +1,9 @@
+I"(function() {
+  $(function() {
+    return tinyMCE.init({
+      selector: 'textarea.tinymce'
+    });
+  });
+
+}).call(this);
+:ET

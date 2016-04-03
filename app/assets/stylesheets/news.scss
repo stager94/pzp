@@ -1,0 +1,20 @@
+.news-block {
+	background: white none repeat scroll 0% 0%;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	margin-bottom: 20px;
+
+	h1, h3 {
+		margin: 0px 0px 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px dashed #ccc;
+		small {
+			display: block;
+			font-size: 12px;
+			margin-top: 5px;
+		}
+	}
+	h2 {
+		margin-top: 0;
+	}
+}

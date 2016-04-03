@@ -1,0 +1,10 @@
+<div class="news-block">
+	<h3>
+		<%= article.title %>
+		<small><%= article.created_at.strftime("%A, %d %B %Y") %></small>
+	</h3>
+	<p>
+		<%= raw article.description %>
+	</p>
+	<%= link_to "Подробнее", article, title: article.title, alt: article.title %>
+</div>

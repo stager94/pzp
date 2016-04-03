@@ -1,0 +1,12 @@
+<div class="news-block">
+	<h2> <%= @page.title %> </h2>
+	<div>
+	<%=	raw @page.description %>
+	</div>
+</div>
+
+<% if @page.slug == 'zagotovitelnyy-punkt' %>
+	<%= content_for :map do %>
+		<div id="map_canvas" data-latitude="50.3968928" data-longitude="30.4835243"></div>
+	<% end %>
+<% end %>

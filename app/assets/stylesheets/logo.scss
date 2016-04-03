@@ -1,0 +1,43 @@
+.logo {
+	background: image-url("2.png") no-repeat;
+	min-height: 450px;
+	margin-top: -75px;
+	position: relative;
+	&::before {
+		display: block;
+		content: " ";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(80, 71, 71, 0.2);
+		z-index: 0;
+	}
+}
+.logo div {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 150px;
+	text-shadow: 0 0 45px #000;
+	position: relative;
+}
+@media screen and (max-width: 1200px) {
+	.logo div {
+		font-size: 40px;
+		padding-top: 150px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.logo div {
+		font-size: 30px;
+		padding-top: 0;
+		height: auto;
+	}
+	.logo {
+		height: auto;
+		padding: 20px 0;
+	}
+}

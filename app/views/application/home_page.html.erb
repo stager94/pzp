@@ -1,0 +1,184 @@
+<section class="pzp-jumbotron">
+	<div class="container">
+		<h2>ПАО «ВЗП-2»</h2>
+		<p>Старейшее предприятие Киева на рынке заготовки макулатуры и другого вторсырья</p>
+
+		<div>Мы на острие решения экологических задач. Пусть вторсырье "работает":  сохраняет природу и создает основу для новой продукции! </div>
+		<div class="gutter-bottom-40">СДЕЛАЕМ СТРАНУ ЧИЩЕ!</div>
+
+		<div class="intro row">
+			<div class="col-xs-4">
+				<div class="img-wrapper"><%= image_tag "intro01.jpg" %></div>
+				<%= image_tag "left_arrow.png", style: "position: absolute;top: 70px;right: -60px;border-radius: 0;" %>
+				<strong>Запад</strong>
+				<span>Кохавинская бумажная фабрика</span>
+			</div>
+			<div class="col-xs-4">
+				<div class="img-wrapper"><%= image_tag "intro02.jpg" %></div>
+				<strong>г. Киев</strong>
+				<span>Производственно-заготовительное предприятие-2</span>
+			</div>
+			<div class="col-xs-4">
+				<div class="img-wrapper"><%= image_tag "intro03.jpg" %></div>
+				<%= image_tag "right_arrow.png", style: "position: absolute;top: 70px;left: -60px;border-radius: 0;" %>
+				<strong>Восток</strong>
+				<span>Рубежанский картонно-тарный комбинат</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="notify">
+	<div class="container">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis felis et ultrices elementum integer tristique
+	</div>
+</section>
+<section class="line" id="about">
+	<div class="container">
+		<h2> <%= @home.title %> </h2>
+
+
+<section class="infoblocks">
+	<div class="container">
+		<div class="intro row">
+			<div class="col-xs-4">
+				<div class="img-wrapper"><%= image_tag "pic01.png", size: "105x105" %></div>
+				<strong>Самое старое предприятие по закупке макулатуры в Киеве</strong>
+				<span>С 20-летним опытом работы</span>
+			</div>
+			<div class="col-xs-4">
+				<div class="img-wrapper"><%= image_tag "pic02.png", size: "105x105" %></div>
+				<strong>Самые выгодные ценовые предложение в данной области</strong>
+				<span>Покупка макулатуры по закупочным ценам фабрики</span>
+			</div>
+			<div class="col-xs-4">
+				<div class="img-wrapper"><%= image_tag "pic03.png", size: "105x105" %></div>
+				
+				<strong>Удобный и гибкий для ВАС график работы заготовительных пунктов</strong>
+				<span>Работаем ежедневно с 8:00 до 20:00</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr style="margin: 10px 0 30px;">
+
+
+
+		<div>
+		<%=	raw @home.description %>
+		</div>	
+	</div>
+</section>
+<section class="line grey" id="services">
+	<div class="container">
+		<h2>Узнайте наши услуги</h2>
+		<p class="help-text">Наше предприятие предоставляет широкий спектр услуг - от приема в пунктах приема в г.Киев до организации вывоза макулатуры с офисов и предприятий (взвешивание и расчет продукции происходит на месте). В случае, если Вас интересуют услуги, которые не указаны в списке ниже, Вы можете обратиться к нам с помощью <%= link_to "формы обратной связи", '#feedback' %> ниже.</p>
+		<div class="col-md-3 color">
+			<div class="partner-item">
+				<%= image_tag "uslugi/01.jpg", class: "img-responsive"%>	
+				<p>
+					Oбеспечиваем вывоз макулатуры, организовываем взвешивание и расчет на месте
+				</p>
+			</div>
+		</div>
+		<div class="col-md-3 color">
+			<div class="partner-item">
+				<%= image_tag "uslugi/02.jpg", class: "img-responsive" %>	
+				<p>
+					Принимаем макулатуру (картон, книги, газеты)
+				</p>
+			</div>
+		</div>
+		<div class="col-md-3 color">
+			<div class="partner-item">
+				<%= image_tag "uslugi/03.jpg", class: "img-responsive" %>	
+				<p>
+					Вывоз макулатуры с офисов, утилизация архивов, предоставление актов о их ликвидации
+				</p>
+			</div>
+		</div>
+		<div class="col-md-3 color">
+			<div class="partner-item">
+				<%= image_tag "uslugi/04.jpg", class: "img-responsive" %>	
+				<p>
+					Закупка пленки, ПЭТ и стрейч 
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="line" id="feedback">
+	<div class="container">
+		<h2>Обратная связь</h2>
+		<p class="help-text">Недостаточно информации на сайте и Вам нужна дополнительная консультация? Оставляйте свои вопросы, отзывы и предложения с помощью формы обратной связи и мы ответим на все Ваши вопросы как можно скорее. Прежде чем отправлять сообщение ознакомтесь с <%= link_to 'нашими услугами', '#services' %></p>
+		<%= form_tag "/" do %>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<input  placeholder="Ваш телефон" type="text" class="form-control">	
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<input placeholder="Ваш email" type="email" class="form-control">	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<textarea class="form-control" placeholder="Ваше сообщение" rows="6">
+					</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<input type="submit" class="btn btn-success btn-lg btn-block">
+			</div>
+		</div>
+		<% end %>
+	</div>
+</section>
+
+<section class="line grey" id="partners">
+	<div class="container">
+		<h2>Наши партнеры</h2>
+		<p class="help-text">За несколько лет успешной работы мы накопили большой опыт стабильного и надежного сотрудничства со многими предприятиями. Хотите стать нашим партнером? Воспользоваться <%= link_to "формы обратной связи", '#feedback' %>, либо обратитесь по координатам, указанных в <%= link_to "контактах", '#map' %></p>
+		<% Partner.all.each do |partner| %>
+		<div class="col-md-3  color" >
+			<div class="partner-item">
+				<%= image_tag partner.image, class: "img-responsive"%>	
+				<p>
+					<%= partner.name %>
+				</p>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</section>
+
+<div class="title" id="map">
+	<div id="map_canvas" data-latitude="50.396527" data-longitude="30.480923"></div>
+	<div class="pozition">
+	<p>
+		Публичное акционерное общество "ВЗП-2"
+		<br>
+		03680, г. Киев, ул. Смольная 7
+	</p>
+
+	<p>
+	 	Директор Гурин Олег Васильевич - 095-877-89-44, 067-255-41-92
+	</p> 
+	<p>
+		Отдел закупок - 050-386-11-32
+	</p>
+	<p>
+	 тел/факс 044-258-79-45
+	</p>
+	</div>
+</div>
+
+

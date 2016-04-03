@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= draw_title %></title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
+  var page_control = {
+  	main: false
+  }
+  </script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp", 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= home_page? ? '' : 'away' %>">
+<%= render "layouts/menu" %>
+
+
+<section class="line grey">
+	<DIV class="container">
+			<%= yield %>
+	</DIV>
+
+  <%= yield :map %>
+
+</section>
+<%= render "layouts/footer"%>
+</body>
+</html>

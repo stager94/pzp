@@ -1,0 +1,7 @@
+<li>
+	<% if menu_item.anchor? %>
+		<%= link_to menu_item.title, menu_item.link, alt: menu_item.title, title: menu_item.title, data: { scroll: menu_item.anchor? } %>
+	<% else %>
+		<%= link_to menu_item.title, menu_item.link, alt: menu_item.title, title: menu_item.title %>
+	<% end %>
+</li>

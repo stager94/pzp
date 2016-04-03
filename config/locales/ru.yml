@@ -1,0 +1,42 @@
+ru:
+  activerecord:
+    models: 
+      article: 
+        zero: "Статей"
+        one: "Статья"
+        many: "Статей"
+        other: "Статьи"
+        few: "Статьи"
+      static_page:
+        zero: "Статическая страница"
+        one: "Статическая страница"
+        many: "Статических страниц"
+        other: "Статические страницы"
+        few: "Статические страницы"
+      partner:
+        zero: "Партнеров"
+        one: "Партнер"
+        many: "Партнеров"
+        other: "Партнеры"
+        few: "Партнеры"
+    attributes:
+      article:
+        title: "Название"
+        text: "Содержание"
+        description: "Краткое содержание"
+
+      static_page:
+        title: "Название"
+        description: "Содержание"
+      partner: 
+        name: "Название"
+        image: "Изображение"
+        description: "Описание"
+      #menu_item: 
+      #  itameble_type: "Н" 
+      #  url: 
+  static_page: 
+    types: 
+      regular: "Обычная"
+      main: "Главная"
+      partners: "Партнеры"
