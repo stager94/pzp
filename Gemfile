@@ -57,3 +57,7 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'unicorn', '4.8.2'
+  gem 'daemons'
+end
